@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="BookContacts20Regular.svg" type="image/x-icon">
+    <title>Contact Us</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url('contactimg.png');
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+            /* Full height of the viewport */
+            display: flex;
+            /* Use Flexbox */
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+        }
+        
+        .contact-form {
+            background: rgba(255, 255, 255, 0.2);
+            /* Semi-transparent background */
+            backdrop-filter: blur(8px);
+            /* Apply blur effect */
+            padding: 20px;
+            border-radius: 10px;
+            /* Rounded corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            /* Shadow for depth */
+            max-width: 400px;
+            /* Maximum width of the form */
+            width: 100%;
+            /* Full width for smaller screens */
+        }
+        
+        .contact-form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            /* Center the heading */
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .contact-form button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .contact-form button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="36a0d3d1-03fb-4dc7-ae4d-dd1a82c3f849">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
